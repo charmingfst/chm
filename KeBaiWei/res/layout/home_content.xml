@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+
+    <com.kebaiwei.view.TitleView
+        android:id="@+id/home_title"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" >
+    </com.kebaiwei.view.TitleView>
+
+    <ViewFlipper
+        android:id="@+id/home_flipper"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_below="@id/home_title"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:background="@drawable/yuan_bg" >
+    </ViewFlipper>
+	
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/home_flipper"
+        android:layout_marginTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#CEB9B9"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/haixian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cai_title_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="海鲜"
+                    android:textColor="#000" />
+
+                <ImageView
+                    android:id="@+id/haixiang_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/icon_up" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/haixian_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="4dp"
+                android:scrollingCache="false" >
+            </ListView>
+
+            <RelativeLayout
+                android:id="@+id/chuancai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cai_title_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="川菜"
+                    android:textColor="#000" />
+
+                <ImageView
+                    android:id="@+id/chuancai_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/icon_up" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/chuancai_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="4dp"
+                android:scrollingCache="false" >
+            </ListView>
+             <RelativeLayout
+                android:id="@+id/tang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/cai_title_bg"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="营养汤"
+                    android:textColor="#000" />
+
+                <ImageView
+                    android:id="@+id/tang_icon"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@drawable/icon_up" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@+id/tang_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@null"
+                android:dividerHeight="4dp"
+                android:scrollingCache="false" >
+            </ListView>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout 
+        android:id="@+id/menu_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/seekbar_bg"
+        >
+        <ImageView 
+            android:id="@+id/shoppingcar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/shoppingcar_icon"
+            android:layout_centerVertical="true"/>
+        <ImageView 
+            android:id="@+id/red_hot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/red_dot"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+            android:layout_alignRight="@id/shoppingcar"/>
+        <TextView 
+            android:layout_toRightOf="@id/shoppingcar"
+	    android:layout_marginLeft="10dp"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:id="@+id/sum_price"
+	    android:textColor="#FF6401"
+	    android:layout_centerVertical="true"
+	    android:textStyle="bold"
+	    android:textSize="20sp"/>
+        <Button 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:layout_marginBottom="6dp"
+            android:layout_alignParentRight="true"
+            android:text="未选好"
+            android:textSize="16sp"
+            android:id="@+id/choice_ok"
+            android:padding="6dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/btn_bg_press"/>
+    </RelativeLayout>
+    <ImageView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/red_dot"
+            android:layout_marginTop="100dp"
+            android:id="@+id/red_hot_move"
+            android:visibility="gone"/>
+</RelativeLayout>

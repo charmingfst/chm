@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+    <com.kebaiwei.view.TitleView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_title"></com.kebaiwei.view.TitleView>
+  	<RelativeLayout 
+  	    android:layout_width="match_parent"
+  	    android:layout_height="wrap_content"
+  	    android:layout_marginLeft="16dp"
+  	    android:layout_marginRight="26dp"
+  	    android:layout_marginTop="20dp"
+  	    android:padding="10dp">
+  	    <TextView 
+  	        android:layout_width="wrap_content"
+  	        android:layout_height="wrap_content"
+  	        android:id="@+id/nicheng"
+  	        android:layout_centerVertical="true"
+  	        android:text="账户名称:"
+  	         android:textColor="#242424"/>
+  	    <EditText 
+  	        android:id="@+id/register_name"
+  	        android:layout_width="match_parent"
+  	        android:layout_height="wrap_content"
+  	        android:layout_marginLeft="4dp"
+  	        android:layout_toRightOf="@id/nicheng"
+  	        android:background="@null"
+  	        />
+
+  	    <TextView
+  	        android:layout_width="match_parent"
+  	        android:layout_height="1dp"
+  	        android:layout_alignParentLeft="true"
+  	        android:layout_below="@+id/register_name"
+  	        android:background="#8B8989" />
+
+  	</RelativeLayout>
+  	<RelativeLayout 
+  	    android:layout_width="match_parent"
+  	    android:layout_height="wrap_content"
+  	    android:layout_marginLeft="16dp"
+  	    android:layout_marginRight="26dp"
+  	    android:padding="10dp">
+  	    <TextView 
+  	        android:layout_width="wrap_content"
+  	        android:layout_height="wrap_content"
+  	        android:id="@+id/mima"
+  	        android:layout_centerVertical="true"
+  	        android:text="账户密码:"
+  	         android:textColor="#242424"/>
+  	    <EditText 
+  	        android:id="@+id/register_pwd"
+  	        android:layout_width="match_parent"
+  	        android:layout_height="wrap_content"
+  	        android:layout_marginLeft="4dp"
+  	        android:layout_toRightOf="@id/mima"
+  	        android:background="@null"
+  	        />
+
+  	    <TextView
+  	        android:layout_width="match_parent"
+  	        android:layout_height="1dp"
+  	        android:layout_alignParentLeft="true"
+  	        android:layout_below="@+id/register_pwd"
+  	        android:background="#8B8989" />
+
+  	</RelativeLayout>
+  	<RelativeLayout 
+  	    android:layout_width="match_parent"
+  	    android:layout_height="wrap_content"
+  	    android:layout_marginLeft="16dp"
+  	    android:layout_marginRight="26dp"
+  	    android:padding="10dp">
+  	    <TextView 
+  	        android:layout_width="wrap_content"
+  	        android:layout_height="wrap_content"
+  	        android:id="@+id/remima"
+  	        android:layout_centerVertical="true"
+  	        android:text="重复密码:"
+  	         android:textColor="#242424"/>
+  	    <EditText 
+  	        android:id="@+id/register_repwd"
+  	        android:layout_width="match_parent"
+  	        android:layout_height="wrap_content"
+  	        android:layout_marginLeft="4dp"
+  	        android:layout_toRightOf="@id/remima"
+  	        android:background="@null"
+  	        />
+
+  	    <TextView
+  	        android:layout_width="match_parent"
+  	        android:layout_height="1dp"
+  	        android:layout_alignParentLeft="true"
+  	        android:layout_below="@+id/register_repwd"
+  	        android:background="#8B8989" />
+
+  	</RelativeLayout>
+
+  	<Button 
+	    android:id="@+id/register_btn"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="确定"
+	    android:textColor="#fff"
+	    android:textSize="20sp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="20dp"
+	    android:padding="10dp"
+	    android:background="@drawable/btn_bg"/>
+
+</LinearLayout>

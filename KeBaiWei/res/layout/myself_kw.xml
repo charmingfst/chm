@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#e5e5e5">
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:gravity="center"
+        android:background="@drawable/bg_titlebar"
+        android:orientation="vertical">
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/userPhoto">
+        </ImageButton>
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/username"
+            android:text="获取中"
+            android:textColor="#fff"/>
+    </LinearLayout>
+	<RelativeLayout
+                android:id="@+id/more_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:layout_marginTop="30dp"
+                android:padding="8.0dip"
+                android:background="@drawable/tap"
+                 >
+
+                <ImageView
+                    android:id="@+id/settingicon"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:src="@drawable/moreitems_setting" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6.0dip"
+                    android:layout_toRightOf="@id/settingicon"
+                    android:text="网络"
+                    android:textColor="#ff202020"
+                    android:textSize="15.0sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/moreitems_arrow" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/more_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+				android:background="@drawable/tap"                
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="10dp"
+                android:padding="8.0dip" >
+
+                <ImageView
+                    android:id="@+id/accounticon"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/moreitems_account" />
+
+                <TextView
+                    android:id="@id/more_setting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6.0dip"
+                    android:layout_toRightOf="@id/accounticon"
+                    android:text="账户"
+                    android:textColor="#ff202020"
+                    android:textSize="15.0sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/moreitems_arrow" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/more_about"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tap"
+                android:clickable="true"
+                android:focusable="true"
+                android:layout_marginTop="10dp"
+                android:padding="8.0dip" >
+
+                <ImageView
+                    android:layout_width="28dip"
+                    android:layout_height="28dp"
+                    android:id="@+id/abouticon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/moreitems_about_icon" />
+
+                <TextView
+                    android:layout_toRightOf="@id/abouticon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6.0dip"
+                    android:text="关于"
+                    android:textColor="#ff202020"
+                    android:textSize="15.0sp" />
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/moreitems_arrow" />
+            </RelativeLayout>
+            
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#fff" >
+    <com.kebaiwei.view.TitleView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/order_nologin_title"></com.kebaiwei.view.TitleView>
+    
+    
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/loginReg"
+        android:layout_centerInParent="true"
+        android:text="登陆/注册"
+        android:textSize="16sp"
+        android:background="@drawable/red_btn_bg"
+        android:padding="16dp"
+        android:textColor="#fff"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/loginReg"
+        android:layout_centerHorizontal="true"
+        android:text="你还没有登陆 , 请登陆后再查看订单"
+        android:textColor="#8B8B8B"
+        android:layout_marginBottom="10dp"/>
+
+</RelativeLayout>

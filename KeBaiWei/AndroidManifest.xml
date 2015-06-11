@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kebaiwei.main"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:name="com.kebaiwei.main.MainApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/icon_logo"
+        android:label="@string/app_name"
+        android:theme="@android:style/Theme.NoTitleBar" >
+        <activity
+            android:name="com.kebaiwei.main.MainActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+           
+        </activity>
+        <activity 
+            android:name="com.kebaiwei.main.FirstActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait">
+             <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+            android:name="com.kebaiwei.main.GuidanceActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"></activity>
+        <activity 
+            android:name="com.kebaiwei.main.LoginActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"></activity>
+        <activity 
+            android:name="com.kebaiwei.main.DetailsActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"></activity>
+        <activity 
+            android:name="com.kebaiwei.main.RegisterActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"></activity>
+        <activity 
+            android:name="com.kebaiwei.main.SettingActivity"
+             android:label="@string/app_name" 
+            android:screenOrientation="portrait"></activity>
+        <activity 
+            android:name="com.kebaiwei.main.AccountActivity"
+             android:label="@string/app_name" 
+            android:screenOrientation="portrait"></activity>
+        <activity 
+            android:name="com.kebaiwei.main.VerifyOrderActivity"
+            android:label="@string/app_name" 
+            android:screenOrientation="portrait"></activity>
+        <activity 
+            android:name="com.kebaiwei.main.AboutActivity"
+             android:label="@string/app_name" 
+            android:screenOrientation="portrait"></activity>
+        <activity 
+            android:name="com.kebaiwei.main.RegisterNextActivity"
+             android:label="@string/app_name" 
+            android:screenOrientation="portrait"></activity>
+        <activity 
+            android:name="com.kebaiwei.main.PayResultActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+        <activity 
+            android:name="com.kebaiwei.main.OrderDetailActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"></activity>
+    </application>
+	<uses-permission android:name="android.permission.INTERNET"/>
+</manifest>

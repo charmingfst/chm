@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:orientation="vertical" >
+      	<com.kebaiwei.view.TitleView 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/register_next_title"></com.kebaiwei.view.TitleView>
+      	<RelativeLayout 
+  	    android:layout_width="match_parent"
+  	    android:layout_height="wrap_content"
+  	    android:layout_marginLeft="16dp"
+  	    android:layout_marginRight="26dp"
+  	    android:layout_marginTop="20dp"
+  	    android:padding="10dp">
+  	    <TextView 
+  	        android:layout_width="wrap_content"
+  	        android:layout_height="wrap_content"
+  	        android:id="@+id/dianhua"
+  	        android:layout_centerVertical="true"
+  	        android:text="支付密码:"
+  	        android:textColor="#000"/>
+  	    <EditText 
+  	        android:id="@+id/pay_key"
+  	        android:layout_width="match_parent"
+  	        android:layout_height="wrap_content"
+  	        android:layout_marginLeft="4dp"
+  	        android:layout_toRightOf="@id/dianhua"
+  	        android:textColor="#000"
+  	        android:textSize="14sp"
+  	        android:hint="6位数字密码"
+  	        android:background="@null"
+  	        />
+  	    <TextView
+  	        android:layout_width="match_parent"
+  	        android:layout_height="1dp"
+  	        android:layout_alignParentLeft="true"
+  	        android:layout_below="@id/pay_key"
+  	        android:background="#8B8989" />
+  	</RelativeLayout>
+  	
+  	  	<RelativeLayout 
+  	    android:layout_width="match_parent"
+  	    android:layout_height="wrap_content"
+  	    android:layout_marginLeft="16dp"
+  	    android:layout_marginRight="26dp"
+  	    android:padding="10dp">
+  	    <TextView 
+  	        android:layout_width="wrap_content"
+  	        android:layout_height="wrap_content"
+  	        android:id="@+id/dianhua"
+  	        android:layout_centerVertical="true"
+  	        android:text="电话号码:"
+  	        android:textColor="#000"/>
+  	    <EditText 
+  	        android:id="@+id/register_tel"
+  	        android:layout_width="match_parent"
+  	        android:layout_height="wrap_content"
+  	        android:layout_marginLeft="4dp"
+  	        android:layout_toRightOf="@id/dianhua"
+  	        android:hint="输入自己的手机号码"
+  	        android:textSize="14sp"
+  	        android:textColor="#000"
+  	        android:background="@null"
+  	        />
+
+  	    <TextView
+  	        android:layout_width="match_parent"
+  	        android:layout_height="1dp"
+  	        android:layout_alignParentLeft="true"
+  	        android:layout_below="@id/register_tel"
+  	        android:background="#8B8989" />
+
+  	</RelativeLayout>
+  	  	<RelativeLayout 
+  	    android:layout_width="match_parent"
+  	    android:layout_height="wrap_content"
+  	    android:layout_marginLeft="16dp"
+  	    android:layout_marginRight="26dp"
+  	    android:padding="10dp">
+  	    <TextView 
+  	        android:layout_width="wrap_content"
+  	        android:layout_height="wrap_content"
+  	        android:id="@+id/youxiang"
+  	        android:textColor="#000"
+  	        android:layout_centerVertical="true"
+  	        android:text="电子邮箱:"/>
+  	    <EditText 
+  	        android:id="@+id/register_email"
+  	        android:layout_width="match_parent"
+  	        android:layout_height="wrap_content"
+  	        android:layout_marginLeft="4dp"
+  	        android:textColor="#000"
+  	        android:textSize="14sp"
+  	        android:hint="请输入电子邮箱"
+  	        android:layout_toRightOf="@id/youxiang"
+  	        android:background="@null"
+  	        />
+
+  	    <TextView
+  	        android:layout_width="match_parent"
+  	        android:layout_height="1dp"
+  	        android:layout_alignParentLeft="true"
+  	        android:layout_below="@+id/register_email"
+  	        android:background="#8B8989" />
+
+  	</RelativeLayout>
+  	<Button 
+	    android:id="@+id/register_next_btn"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:text="确定"
+	    android:textColor="#fff"
+	    android:textSize="20sp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp"
+	    android:layout_marginTop="20dp"
+	    android:padding="10dp"
+	    android:background="@drawable/btn_bg"/>
+
+</LinearLayout>
